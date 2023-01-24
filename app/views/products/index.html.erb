@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang>
 <head>
   <title>Wypozyczalnia</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,7 +11,22 @@
 </head>
 
 <body>
-  <div>fdsfds</div>
+  <nav id="top_nav">
+    <%= image_tag("beach_logo.svg", size: "100x100", :alt => "Beach", :class => "logo_nav") %>
+    <div id="top_options">
+      <a>O nas</a>
+      <a>Kontakt</a>
+      <a>Zaloguj</a>
+    </div>
+  </nav>
+  <main>
+    xxx
+  </main>
+  <footer>
+    <a>©2023 Wypożyczalnia</a>
+    <%= image_tag("facebook2.svg", size: "20x20", :alt => "Facebook button", :class => "logo_footer") %>
+    <%= image_tag("twitter.svg", size: "20x20", :alt => "Twitter button", :class => "logo_footer") %>
+  </footer>
 <%= yield %>
 </body>
 </html>

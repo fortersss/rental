@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+
+:root {
+    /*Colors in app:*/
+    --dark-grey: #999999;
+    --light-grey: #CCCCCC;
+}
+
+body {
+    background-color: var(--light-grey);
+}
+
+#top_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--dark-grey);
+    padding: 10px;
+}
+
+#top_options > a {
+    padding: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-top: 2px solid var(--dark-grey);
+    padding: 10px;
+}
+
+footer > .logo_footer, a {
+    padding: 20px;
+}
