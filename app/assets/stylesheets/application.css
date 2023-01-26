@@ -24,7 +24,7 @@ body {
     background-color: var(--light-grey);
 }
 
-#top_nav {
+#top-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +32,7 @@ body {
     padding: 10px;
 }
 
-#top_options > a {
+#top-options > a {
     padding: 20px;
 }
 
@@ -48,6 +48,27 @@ footer {
     padding: 10px;
 }
 
-footer > .logo_footer, a {
+footer > .logo-footer, a {
     padding: 20px;
+}
+
+section.window-product {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 0.2fr);
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.window-product-title {
+    grid-area: 1 / 1 / 1 / 4;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+div.text-container > a {
+    text-align: left;
 }
