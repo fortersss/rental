@@ -9,12 +9,7 @@
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_importmap_tags
   %body
-    %nav#top-nav
-      = image_tag("beach_logo.svg", size: "100x100", :alt => "Beach", :class => "logo-nav")
-      #top-options
-        %a O nas
-        %a Kontakt
-        %a Zaloguj
+    = render partial:'partials/nav'
     %main
       %section.window-product
         %h1.window-product-title Nasza oferta
@@ -30,8 +25,5 @@
           = image_tag("beach_logo.svg", size: "100x100", :alt => "Beach", :class => "product-photo")
           %div.text-container
             %a Parasole
-    %footer
-      %a ©2023 Wypożyczalnia
-      = image_tag("facebook2.svg", size: "20x20", :alt => "Facebook button", :class => "logo-footer")
-      = image_tag("twitter.svg", size: "20x20", :alt => "Twitter button", :class => "logo-footer")
+    = render 'partials/footer'
     = yield
