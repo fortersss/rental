@@ -12,12 +12,12 @@
     = render partial:'partials/nav'
     %main
       %section.window-product
-        %h1.window-product-title Nasza oferta
-        - @products.each do |product|
+        %h1.window-product-title
+          = @product.name
           %div.general-product-container
             = image_tag("beach_logo.svg", size: "200x200", :alt => "Beach", :class => "product-photo")
             %div.text-container
-              -# = link_to product.name, product_path(product)
-              = button_to product.name, product_path(product), method: :get, class: "btn"
+              = "Dostępność: #{sprintf('%.0f', @product.stock)} szt."
+              = "Cena: #{sprintf('%.2f', @product.price)} zł"
     = render 'partials/footer'
     = yield

@@ -11,8 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2023_01_23_191726) do
-  create_table "orders", id: false, force: :cascade do |t|
-    t.integer "id"
+  create_table "orders", force: :cascade do |t|
     t.datetime "order_date"
     t.string "user_name"
     t.string "user_last_name"
@@ -24,8 +23,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_23_191726) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "products", id: false, force: :cascade do |t|
-    t.integer "id"
+  create_table "products", force: :cascade do |t|
     t.string "name"
     t.float "price"
     t.date "rental_end_date"
@@ -34,8 +32,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_23_191726) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", id: false, force: :cascade do |t|
-    t.integer "id"
+  create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "last_name"
     t.string "email"
