@@ -11,13 +11,13 @@
   %body
     = render partial:'partials/nav'
     %main
-      %section.window-product
-        %h1.window-product-title
+      %section.window-product-single
+        %h1.window-product-title-single
           = @product.name
-          %div.general-product-container
-            = image_tag("beach_logo.svg", size: "200x200", :alt => "Beach", :class => "product-photo")
-            %div.text-container
-              = "Dostępność: #{sprintf('%.0f', @product.stock)} szt."
-              = "Cena: #{sprintf('%.2f', @product.price)} zł"
+        %div.general-product-container-single
+          = image_tag("beach_logo.svg", size: "500x500", :alt => "Beach", :class => "product-photo-single")
+        %div.text-container-single
+          = "Dostępność: #{sprintf('%.0f', @product.stock)} szt."
+          = "Cena: #{sprintf('%.2f', @product.price)} zł"
     = render 'partials/footer'
     = yield
