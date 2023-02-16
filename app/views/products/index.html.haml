@@ -1,23 +1,13 @@
-!!!
-%html{:lang => ""}
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Wypozyczalnia
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
-    = csrf_meta_tags
-    = csp_meta_tag
-    = stylesheet_link_tag "application", "data-turbo-track": "reload"
-    = javascript_importmap_tags
-  %body
-    = render partial:'partials/nav'
-    %main
-      %section.window-product
-        %h1.window-product-title Nasza oferta
-        - @products.each do |product|
-          %div.general-product-container
-            = image_tag("beach_logo.svg", size: "200x200", :alt => "Beach", :class => "product-photo")
-            %div.text-container
-              -# = link_to product.name, product_path(product)
-              = button_to product.name, product_path(product), method: :get, class: "btn"
-    = render 'partials/footer'
-    = yield
+= render partial:'partials/head'
+%body
+  = render partial:'partials/nav'
+  %main
+    %section.window-product
+      %h1.window-product-title Offer
+      - @products.each do |product|
+        %div.general-product-container
+          = image_tag("beach_logo.svg", size: "200x200", :alt => "Beach", :class => "product-photo")
+          %div.text-container
+            = button_to product.name, product_path(product), method: :get, class: "btn"
+  = render 'partials/footer'
+  = yield

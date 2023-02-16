@@ -2,6 +2,6 @@
   = link_to products_path do
     = image_tag("beach_logo.svg", size: "100x100", :alt => "Beach", :class => "logo-nav")
   #top-options
-    %a O nas
-    %a Kontakt
-    %a Zaloguj
+    %a About
+    %a Contact
+    = link_to "My Account", login_path(@user), class: "index-link"

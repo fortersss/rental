@@ -1,20 +1,18 @@
-!!!
-%html
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Wypozyczalnia
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
-    = csrf_meta_tags
-    = csp_meta_tag
-    = stylesheet_link_tag "application", "data-turbo-track": "reload"
-    = javascript_importmap_tags
-  %body
+= render partial:'partials/head'
+%body
+  = render partial:'partials/nav'
+  %main
     = form_for @user do |f|
       = f.label :username
       = f.text_field :username, placeholder: "Username"
+      = f.label :email
+      = f.text_field :email, placeholder: "E-mail"
       = f.label :password
       = f.password_field :password, placeholder: "Password"
       = f.label :password_confirmation
       = f.password_field :password_confirmation, placeholder: "Confirm Password"
+      = f.label :phone_number
+      = f.text_field :phone_number, placeholder: "XXX-XXX-XXX"
       = f.submit "Create Account"
-    = yield
+  = render 'partials/footer'
+  = yield

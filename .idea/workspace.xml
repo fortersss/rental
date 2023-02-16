@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daf3c3cc-b467-4b08-89cb-ce88cb807853" name="Changes" comment="Fresh installation">
-      <change afterPath="$PROJECT_DIR$/app/views/users/new.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/partials/_head.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2609f77-93c1-40c3-893d-b0c3d3ee7577.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d2609f77-93c1-40c3-893d-b0c3d3ee7577.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wypozyczalnia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wypozyczalnia.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/partials/_footer.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/_footer.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/partials/_nav.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/_nav.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/products/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/index.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/products/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/show.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/new.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230123191559_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230123191559_create_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,25 +65,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/bgutkowski/Projekty/wypozyczalnia&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/bgutkowski/Projekty/wypozyczalnia",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.rails.projectView.checked": "true",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Rails.wypozyczalnia">
     <configuration name="wypozyczalnia" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="wypozyczalnia" />
@@ -173,7 +177,9 @@
       <workItem from="1674924105627" duration="4481000" />
       <workItem from="1674998094705" duration="19587000" />
       <workItem from="1675105329509" duration="5590000" />
-      <workItem from="1675878642589" duration="3439000" />
+      <workItem from="1675878642589" duration="3735000" />
+      <workItem from="1676578671210" duration="447000" />
+      <workItem from="1676579155053" duration="3527000" />
     </task>
     <task id="LOCAL-00001" summary="Fresh installation">
       <created>1674069961855</created>

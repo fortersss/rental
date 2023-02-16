@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/products/:id', to: "products#show", as: "product"
   resources :users, only: [:create, :show]
   get "/signup", to: "users#new"
-  get "/login", to: "sessions#new"
-  post "/sessions", to: "sessions#create"
-  delete "/sessions", to: "sessions#destroy"
+  get "/login", to: "users#new"
+  post "/sessions", to: "users#create"
+  delete "/sessions", to: "users#destroy"
 end

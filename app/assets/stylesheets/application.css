@@ -38,6 +38,11 @@ body {
     padding-right: 20px;
 }
 
+.index-link {
+    text-decoration: none;
+    color: black;
+}
+
 footer {
     position: fixed;
     bottom: 0;

@@ -1,23 +1,14 @@
-!!!
-%html{:lang => ""}
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Wypozyczalnia
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
-    = csrf_meta_tags
-    = csp_meta_tag
-    = stylesheet_link_tag "application", "data-turbo-track": "reload"
-    = javascript_importmap_tags
-  %body
-    = render partial:'partials/nav'
-    %main
-      %section.window-product-single
-        %h1.window-product-title-single
-          = @product.name
-        %div.general-product-container-single
-          = image_tag("beach_logo.svg", size: "500x500", :alt => "Beach", :class => "product-photo-single")
-        %div.text-container-single
-          = "Dostępność: #{sprintf('%.0f', @product.stock)} szt."
-          = "Cena: #{sprintf('%.2f', @product.price)} zł"
-    = render 'partials/footer'
-    = yield
+= render partial:'partials/head'
+%body
+  = render partial:'partials/nav'
+  %main
+    %section.window-product-single
+      %h1.window-product-title-single
+        = @product.name
+      %div.general-product-container-single
+        = image_tag("beach_logo.svg", size: "500x500", :alt => "Beach", :class => "product-photo-single")
+      %div.text-container-single
+        = "Availability: #{sprintf('%.0f', @product.stock)} szt."
+        = "Price: #{sprintf('%.2f', @product.price)} zł"
+  = render 'partials/footer'
+  = yield
