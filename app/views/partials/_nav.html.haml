@@ -4,4 +4,8 @@
   #top-options
     %a About
     %a Contact
-    = link_to "My Account", login_path(@user), class: "index-link"
+    = button_to "Register", signup_path, method: :get, class: "index-link"
+    - if logged_in?
+      = button_to "Logout", sessions_path, method: :delete
+    - else
+      = button_to "Login Page", login_path, method: :get

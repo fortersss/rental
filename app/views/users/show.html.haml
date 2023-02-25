@@ -1,0 +1,10 @@
+= render partial:'partials/head'
+  %body
+    = render partial:'partials/nav'
+    %main
+      %h1
+      Welcome to the page of #{@user.username}
+      - if current_user == @user
+      %h3 This is my page!!!
+    = render 'partials/footer'
+    = yield

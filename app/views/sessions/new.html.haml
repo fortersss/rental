@@ -1,0 +1,12 @@
+= render partial:'partials/head'
+%body
+  = render partial:'partials/nav'
+  %main
+    = form_tag sessions_path do
+      = label_tag "Username"
+      = text_field_tag :username, nil, placeholder: "Username"
+      = label_tag "Password"
+      = password_field_tag :password, nil, placeholder: "Password"
+      = submit_tag "Log In"
+  = render 'partials/footer'
+  = yield

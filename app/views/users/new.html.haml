@@ -11,6 +11,10 @@
       = f.password_field :password, placeholder: "Password"
       = f.label :password_confirmation
       = f.password_field :password_confirmation, placeholder: "Confirm Password"
+      = f.label :first_name
+      = f.text_field :first_name, placeholder: "First name"
+      = f.label :last_name
+      = f.text_field :last_name, placeholder: "Last name"
       = f.label :phone_number
       = f.text_field :phone_number, placeholder: "XXX-XXX-XXX"
       = f.submit "Create Account"
